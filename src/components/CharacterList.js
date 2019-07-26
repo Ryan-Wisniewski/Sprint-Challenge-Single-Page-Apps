@@ -19,7 +19,7 @@ const [character, setCharacter] = useState([])
 
   return <section className='character-list grid-view'>
 
-      <h2>{character.map(data => {
+      <div className='grid-view'>{character.map(data => {
         return  <CharacterCard 
         key={data.id}
         img={data.image}
@@ -28,7 +28,7 @@ const [character, setCharacter] = useState([])
         origin={data.origin}
         
         />
-      })}</h2>
+      })}</div>
     </section>
 
 }

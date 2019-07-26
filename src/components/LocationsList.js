@@ -18,9 +18,9 @@ export default function LocationsList() {
     },[])
     return(
         <div> 
-            <h2>{locations.map(data => {
+            <div>{locations.map(data => {
                 return <LocationsCard key={data.id} dimension={data.dimension} name={data.name} type={data.type}/>}
-            )}</h2>
+            )}</div>
             
         </div>
        

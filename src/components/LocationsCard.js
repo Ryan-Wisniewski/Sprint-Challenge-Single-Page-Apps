@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LocationsCard (props) {
   return (
-  <div>
+  <div  className='card-border-location'>
     <h1>{props.name}</h1>
     <p>{props.dimension}</p> 
     <p>{props.type}</p>
